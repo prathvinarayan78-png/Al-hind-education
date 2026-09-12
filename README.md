@@ -32,8 +32,8 @@ a finished object. The items below are **placeholders** and are marked in
 the HTML with `<!-- REPLACE -->` comments:
 
 - [ ] Registration number (`S-21412/2016`, NCT of Delhi) — topbar, footer, transparency section
-- [ ] Phone (`+91 94150 27786`) and email (`salam@alhindsociety.in`)
-- [ ] Office address (1st Floor, 14/2 Main Mohan Garden Road, New Delhi – 110 059) and the map coordinates in `contact.html`
+- [ ] UPI ID and bank account number / IFSC on `donate.html`
+- [ ] Nudge the map marker in `contact.html` to House No. 14A, Sethi Enclave Phase 1
 - [ ] Bank account number / IFSC and the UPI ID on `donate.html`
 - [ ] 12A / 80G and Darpan IDs in the transparency section
 - [ ] Annual-report PDFs: drop real files under `assets/docs/` (names are already linked)
