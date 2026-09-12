@@ -1,9 +1,9 @@
 # Al Hind Educations & Developments Society — website
 
 A hand-set static website (no framework, no build step, no trackers) for
-**Al Hind Educations & Developments Society**, a Lucknow-based welfare
+**Al Hind Educations & Developments Society**, a Mohan Garden, Delhi-based welfare
 society working in education and on-the-ground public welfare across
-rural Uttar Pradesh.
+Delhi's urban villages and bastis.
 
 ## Pages
 
@@ -31,9 +31,9 @@ The site is written with complete, plausible copy so it can be reviewed as
 a finished object. The items below are **placeholders** and are marked in
 the HTML with `<!-- REPLACE -->` comments:
 
-- [ ] Registration number (`LKO-1412/2016`) — topbar, footer, transparency section
+- [ ] Registration number (`S-21412/2016`, NCT of Delhi) — topbar, footer, transparency section
 - [ ] Phone (`+91 94150 27786`) and email (`salam@alhindsociety.in`)
-- [ ] Office address (H. No. 14/2, Civil Hospital Road, Naya Gaon, Lucknow) and the map coordinates in `contact.html`
+- [ ] Office address (1st Floor, 14/2 Main Mohan Garden Road, New Delhi – 110 059) and the map coordinates in `contact.html`
 - [ ] Bank account number / IFSC and the UPI ID on `donate.html`
 - [ ] 12A / 80G and Darpan IDs in the transparency section
 - [ ] Annual-report PDFs: drop real files under `assets/docs/` (names are already linked)
