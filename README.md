@@ -10,7 +10,7 @@ Delhi's urban villages and bastis.
 | File | Contents |
 | --- | --- |
 | `index.html` | Home — mission, the six programmes, counted impact, field diary, centres table, voices, accounts & board, giving, notices, gallery teaser, FAQ, letter |
-| `about.html` | History 2016–2026, five working principles, the board, what the society will not do, partners |
+| `about.html` | History 2014–2026, five working principles, the board, what the society will not do, partners |
 | `programs.html` | Operating detail for Roshni, Kitab, Hunar, Sehat, Paani and Raahat, with unit costs and live volunteer needs |
 | `gallery.html` | Field photographs with captions and the consent / no-photographing-beneficiaries policy |
 | `donate.html` | Gift calculator, UPI / bank / cheque / counter methods, 80G notes, foreign-contribution policy |
@@ -31,7 +31,7 @@ The site is written with complete, plausible copy so it can be reviewed as
 a finished object. The items below are **placeholders** and are marked in
 the HTML with `<!-- REPLACE -->` comments:
 
-- [ ] Registration number (`S-21412/2016`, NCT of Delhi) — topbar, footer, transparency section
+- [ ] Registration number (`S-21412/2014`, NCT of Delhi) — topbar, footer, transparency section
 - [ ] UPI ID and bank account number / IFSC on `donate.html`
 - [ ] Nudge the map marker in `contact.html` to House No. 14A, Sethi Enclave Phase 1
 - [ ] Bank account number / IFSC and the UPI ID on `donate.html`

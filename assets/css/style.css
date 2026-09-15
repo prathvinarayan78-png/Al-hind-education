@@ -532,3 +532,59 @@ footer a:hover { color: var(--ochre); }
   .hero h1 { font-size: 2.3rem; }
   .pull { font-size: 1.2rem; }
 }
+
+/* ---------- scroll-driven pieces ---------- */
+
+/* bars grow as the chart enters the viewport */
+.bar i { width: 0; transition: width 1.2s cubic-bezier(.2, .7, .2, 1) .15s; }
+.in .bar i { width: var(--w, 100%); }
+
+/* section rail with scrollspy (home page, wide screens only) */
+.rail {
+  position: fixed; right: 1.1rem; top: 50%; transform: translateY(-50%);
+  display: none; flex-direction: column; gap: .55rem; z-index: 90;
+}
+@media (min-width: 88rem) { .rail { display: flex; } }
+.rail a {
+  font-size: .64rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--ink-soft); text-decoration: none;
+  display: flex; align-items: center; justify-content: flex-end; gap: .5rem;
+  opacity: .55; transition: opacity .25s ease, color .25s ease;
+}
+.rail a::after { content: ""; width: .9rem; height: 2px; background: currentColor; transition: width .25s ease; }
+.rail a:hover { opacity: 1; }
+.rail a.on { opacity: 1; color: var(--madder); }
+.rail a.on::after { width: 1.8rem; }
+
+/* back to top */
+.btt {
+  position: fixed; right: 1.1rem; bottom: 1.2rem; z-index: 90;
+  width: 2.6rem; height: 2.6rem; border: 1.5px solid var(--ink);
+  background: var(--paper); color: var(--ink); font-size: 1.1rem; cursor: pointer;
+  opacity: 0; pointer-events: none; transform: translateY(8px);
+  transition: opacity .3s ease, transform .3s ease;
+}
+.btt.show { opacity: 1; pointer-events: auto; transform: none; }
+.btt:hover { background: var(--madder); border-color: var(--madder); color: var(--paper); }
+
+/* grid children must be allowed to shrink, or long lines force overflow */
+.hero-grid > *, .mission-grid > *, .impact-grid > *, .story > *,
+.trans-grid > *, .contact-grid > *, .prog-body > * { min-width: 0; }
+
+/* ---------- mobile re-alignment: everything sits inside the screen ---------- */
+@media (max-width: 46rem) {
+  p, li, dd, dt, h1, h2, h3, blockquote, caption, .fine { overflow-wrap: break-word; }
+  .sec-head h2 { font-size: 1.55rem; }
+  .prog-name { font-size: 1.15rem; }
+  .prog-body p, .story article p, .mission-body p, .impact-grid p, .faq .prog-body p { max-width: 100%; }
+  .story article ol { padding-left: 1.1rem; }
+  .pull { font-size: 1.15rem; margin: 1.4rem 0; }
+  .chart { padding: 1rem; }
+  .bar-row { grid-template-columns: 5rem 1fr 2.6rem; gap: .55rem; }
+  .doc-list a { flex-wrap: wrap; }
+  .doc-list a span { white-space: normal; }
+  .prog-facts dl div { flex-wrap: wrap; gap: .2rem; }
+  .prog-facts dd { text-align: left; }
+  .signoff { flex-wrap: wrap; }
+  .hero-fig .stamp { right: 0; }
+}

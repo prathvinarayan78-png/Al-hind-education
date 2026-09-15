@@ -1,7 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" fill="#12263a"/>
-  <path d="M10 44c7-4 15-4 22 0V18c-7-4-15-4-22 0z" fill="#f5efe1"/>
-  <path d="M54 44c-7-4-15-4-22 0V18c7-4 15-4 22 0z" fill="#f5efe1"/>
-  <circle cx="32" cy="12" r="5" fill="#b0821f"/>
-  <path d="M10 50h44" stroke="#a83a28" stroke-width="4"/>
+  <!-- pointed arch -->
+  <path d="M14 38V24C14 14 24 10 32 5C40 10 50 14 50 24V38" fill="none" stroke="#f5efe1" stroke-width="3"/>
+  <!-- rising sun within the arch -->
+  <circle cx="32" cy="24" r="4.5" fill="#b0821f"/>
+  <!-- open book -->
+  <path d="M12 50c7-4 14-4 20 0V38c-7-4-14-4-20 0z" fill="#f5efe1"/>
+  <path d="M52 50c-7-4-14-4-20 0V38c7-4 14-4 20 0z" fill="#f5efe1"/>
+  <!-- ground line -->
+  <path d="M12 57h40" stroke="#a83a28" stroke-width="3"/>
 </svg>
