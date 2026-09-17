@@ -535,48 +535,6 @@ footer a:hover { color: var(--ochre); }
 
 /* ---------- scroll-driven pieces ---------- */
 
-/* pinned "day in the field": vertical scroll drives a horizontal track */
-.day { background: var(--indigo-deep); color: #ddd6c5; padding-block: 0; }
-.day-sticky {
-  position: sticky; top: 0; min-height: 100vh; overflow: hidden;
-  display: flex; flex-direction: column; justify-content: center;
-  padding-block: 4.5rem 2rem;
-}
-.day .sec-head { border-top-color: var(--paper); }
-.day .sec-head h2 { color: var(--paper); }
-.day .sec-head .sec-note { color: #b7b0a0; }
-.day-track {
-  display: flex; gap: 1.2rem; width: max-content; will-change: transform;
-  padding-block: 1rem;
-  padding-inline: max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter)));
-}
-.day-card {
-  width: 19rem; flex: none; background: var(--card); color: var(--ink);
-  border: 1px solid var(--line); padding: 1.4rem;
-  display: flex; flex-direction: column; gap: .6rem;
-}
-.day-card time { font-family: var(--serif); font-style: italic; font-size: 1.7rem; color: var(--madder); }
-.day-card h3 { font-size: 1.15rem; }
-.day-card p { font-size: .92rem; color: var(--ink-soft); }
-.day-card:nth-child(even) { background: var(--paper-deep); transform: translateY(1.1rem); }
-.day-bar { height: 3px; background: rgba(245, 239, 225, .2); margin-top: 2.2rem; }
-.day-bar i { display: block; height: 100%; width: 0; background: var(--ochre); }
-@media (max-width: 62rem) {
-  .day { height: auto !important; }
-  .day-sticky { position: static; min-height: 0; overflow: visible; padding-block: 3rem 2rem; }
-  .day-track {
-    width: auto; max-width: 100%; transform: none !important;
-    overflow-x: auto; padding-inline: var(--gutter);
-    scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
-  }
-  .day-card { scroll-snap-align: center; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .day { height: auto !important; }
-  .day-sticky { position: static; min-height: 0; }
-  .day-track { width: auto; max-width: 100%; transform: none !important; overflow-x: auto; }
-}
-
 /* bars grow as the chart enters the viewport */
 .bar i { width: 0; transition: width 1.2s cubic-bezier(.2, .7, .2, 1) .15s; }
 .in .bar i { width: var(--w, 100%); }

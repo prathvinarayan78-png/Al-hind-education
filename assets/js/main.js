@@ -159,34 +159,6 @@
     }
   }
 
-  /* ---- pinned day strip: vertical scroll moves the track horizontally ---- */
-  var daySec = document.getElementById("day");
-  var dayTrack = document.getElementById("day-track");
-  var dayBar = document.getElementById("day-progress");
-  if (daySec && dayTrack) {
-    var dayMq = window.matchMedia("(max-width: 62rem)");
-    var dayDist = 0;
-    function dayLayout() {
-      if (reduceMotion || dayMq.matches) { daySec.style.height = ""; dayDist = 0; return; }
-      dayDist = Math.max(dayTrack.scrollWidth - window.innerWidth, 0);
-      daySec.style.height = (dayDist + window.innerHeight) + "px";
-    }
-    function dayScroll() {
-      if (reduceMotion || dayMq.matches) return;
-      var total = daySec.offsetHeight - window.innerHeight;
-      var p = total > 0 ? Math.min(Math.max((window.scrollY - daySec.offsetTop) / total, 0), 1) : 0;
-      dayTrack.style.transform = "translateX(" + (-p * dayDist).toFixed(1) + "px)";
-      if (dayBar) dayBar.style.width = (p * 100).toFixed(1) + "%";
-    }
-    window.addEventListener("resize", function () { dayLayout(); dayScroll(); });
-    window.addEventListener("scroll", dayScroll, { passive: true });
-    dayLayout();
-    dayScroll();
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(function () { dayLayout(); dayScroll(); });
-    }
-  }
-
   /* ---- mobile nav ---- */
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
