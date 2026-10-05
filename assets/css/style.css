@@ -533,7 +533,42 @@ footer a:hover { color: var(--ochre); }
   .pull { font-size: 1.2rem; }
 }
 
-/* ---------- scroll-driven pieces ---------- */
+/* ---------- the path (Nasih Public School) ---------- */
+
+.path { list-style: none; border-top: 2px solid var(--ink); }
+.path li {
+  display: grid; grid-template-columns: 4.5rem 1fr; gap: 1.2rem;
+  padding: 1.5rem .2rem; border-bottom: 1px solid var(--line);
+}
+.path-no { font-family: var(--serif); font-style: italic; font-size: 2.1rem; color: var(--madder); line-height: 1; }
+.path h3 { font-size: 1.3rem; margin-bottom: .4rem; }
+.path h3 em { color: var(--indigo); }
+.path p { max-width: 46em; color: var(--ink-soft); }
+.path .path-len {
+  display: inline-block; margin-top: .7rem; font-size: .74rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--indigo);
+  border: 1px solid var(--line); padding: .3rem .7rem;
+}
+@media (max-width: 46rem) {
+  .path li { grid-template-columns: 2.8rem 1fr; gap: .9rem; padding: 1.2rem 0; }
+  .path-no { font-size: 1.5rem; }
+}
+
+.buildfund {
+  margin-top: 2.6rem; background: var(--card); border: 1px solid var(--line);
+  padding: 1.6rem; display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
+  gap: 2rem; align-items: center;
+}
+.buildfund h3 { font-size: 1.2rem; margin-bottom: .5rem; }
+.buildfund p { color: var(--ink-soft); font-size: .95rem; max-width: 34em; }
+.buildfund .bar { height: 1.1rem; }
+.buildfund .raised { display: flex; justify-content: space-between; gap: 1rem; font-size: .85rem; margin-top: .6rem; }
+.buildfund .raised b { font-family: var(--serif); font-size: 1.05rem; color: var(--indigo-deep); }
+@media (max-width: 62rem) { .buildfund { grid-template-columns: 1fr; } }
+
+/* ---------- school day table ---------- */
+
+.daytable td:first-child { font-family: var(--serif); font-style: italic; color: var(--madder); white-space: nowrap; padding-right: 1.2rem; }
 
 /* bars grow as the chart enters the viewport */
 .bar i { width: 0; transition: width 1.2s cubic-bezier(.2, .7, .2, 1) .15s; }

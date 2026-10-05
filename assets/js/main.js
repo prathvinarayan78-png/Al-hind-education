@@ -193,10 +193,15 @@
     var custom = giftForm.querySelector("[name=custom]");
     var out = document.getElementById("gift-out");
     var fund = function (n) {
+      if (n >= 240000) return "a complete classroom at Nasih Public School — walls, roof, benches and board, named as you wish.";
+      if (n >= 24000) return "a child's full hifz year at Nasih — the qari's time, the revision registers, the midday meal.";
+      if (n >= 9000) return "a qari's month at Nasih Public School — the memorisation never loses its teacher.";
       if (n >= 5000) return "a month of a bridge classroom — rent, chalk, and a teacher's honorarium.";
       if (n >= 2600) return "one woman's full tailoring toolkit at a Hunar centre: machine time, thread, and her exam fee.";
+      if (n >= 2500) return "a desk-bench pair for Nasih Public School, sized to the child who inherits it.";
       if (n >= 1100) return "a complete school kit — bag, slates, notebooks, geometry box — on one child's back for the year.";
       if (n >= 500) return "a family's monsoon ration kit: rice, dal, oil, salt, and jaggery for three weeks.";
+      if (n >= 25) return Math.floor(n / 25) + " brick" + (n >= 50 ? "s" : "") + " in the first wall of Nasih Public School.";
       return "chalk, slates and register paper for a bridge classroom for a fortnight.";
     };
     var say = function () {

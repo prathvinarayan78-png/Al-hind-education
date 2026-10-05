@@ -9,7 +9,8 @@ Delhi's urban villages and bastis.
 
 | File | Contents |
 | --- | --- |
-| `index.html` | Home — mission, the six programmes, counted impact, field diary, centres table, voices, accounts & board, giving, notices, gallery teaser, FAQ, letter |
+| `index.html` | Home — Nasih Public School hero & the four-stage Path with Phase-1 build fund, mission, the six programmes, counted impact, field diary, centres table, voices, accounts & board, giving, notices, gallery teaser, FAQ, letter |
+| `school.html` | Nasih Public School — the idea, the Path (Class 5 → hifz → Class 12 → Kasb), the school day, hifz method, footing after 12th, phased build, admissions & fees |
 | `about.html` | History 2014–2026, five working principles, the board, what the society will not do, partners |
 | `programs.html` | Operating detail for Roshni, Kitab, Hunar, Sehat, Paani and Raahat, with unit costs and live volunteer needs |
 | `gallery.html` | Field photographs with captions and the consent / no-photographing-beneficiaries policy |
@@ -39,6 +40,7 @@ the HTML with `<!-- REPLACE -->` comments:
 - [ ] Annual-report PDFs: drop real files under `assets/docs/` (names are already linked)
 - [ ] Names of board members, coordinators and the quoted voices, if they differ from the draft
 - [ ] Figures: every number on the site should be checked against the audited annual report before launch — the site says the report wins, so make it true
+- [ ] Nasih Public School specifics: Phase-1 target and raised amounts, the plot location, fee policy and the bell-table are drafts pending the board's sanctions
 
 ## Structure
 
