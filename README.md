@@ -40,6 +40,7 @@ the HTML with `<!-- REPLACE -->` comments:
 - [ ] Annual-report PDFs: drop real files under `assets/docs/` (names are already linked)
 - [ ] Names of board members, coordinators and the quoted voices, if they differ from the draft
 - [ ] Figures: every number on the site should be checked against the audited annual report before launch — the site says the report wins, so make it true
+- [ ] The site is intentionally pre-launch: no fabricated track record. Add real figures only once they exist in the audited accounts
 - [ ] Nasih Public School specifics: Phase-1 target and raised amounts, the plot location, fee policy and the bell-table are drafts pending the board's sanctions
 
 ## Structure
