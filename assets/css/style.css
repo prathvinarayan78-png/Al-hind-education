@@ -121,7 +121,7 @@ em { font-family: var(--serif); font-style: italic; }
 }
 
 .brand { display: flex; align-items: center; gap: .8rem; text-decoration: none; color: inherit; }
-.brand .mark { width: 44px; height: 44px; flex: none; }
+.brand .mark { width: 52px; height: 52px; flex: none; }
 .brand-name {
   font-family: var(--serif); font-weight: 700; font-size: 1.16rem;
   color: var(--indigo-deep); line-height: 1.15; display: block;
