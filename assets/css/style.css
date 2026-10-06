@@ -5,9 +5,10 @@
    ========================================================================== */
 
 :root {
-  --paper: #f5efe1;
-  --paper-deep: #ebe2cd;
-  --card: #fbf6ea;
+  color-scheme: light;
+  --paper: #fbf8ef;
+  --paper-deep: #f2ead8;
+  --card: #fffdf6;
   --ink: #23271f;
   --ink-soft: #5b5f53;
   --indigo: #12263a;
